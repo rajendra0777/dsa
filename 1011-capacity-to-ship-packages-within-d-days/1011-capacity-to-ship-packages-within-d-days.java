@@ -1,3 +1,11 @@
+/* Left = Max is your start.
+Right = Sum is your end.
+Find the middle.
+Adjust based on days.
+
+Approach : Binary search
+TC: o(n) + o(sum - max) = O(NlogS)
+*/
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int left = 0;
@@ -19,8 +27,8 @@ class Solution {
                     currentLoad = 0;
                     day++; // add weight to the next day
                 }
-            // requires for every package
-            currentLoad += w;
+                // requires for every package
+                currentLoad += w;
             }
 
             if (day <= days) { // try to find smaller capacity in left
