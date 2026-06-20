@@ -14,6 +14,7 @@ Approach - 2 Pointer
 - keep adding all even nodes till end and return the head
  */
 class Solution {
+    // Optimized 
     public ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null)
             return head;
@@ -31,6 +32,41 @@ class Solution {
             evenNode = evenNode.next; // move forward
         }
         oddNode.next = evenHead; // link last oddNode -> first evenNode
+        return head;
+    }
+
+    /* Approach 2 -(Using temp storage for even and odd nodes)
+        TC: o(n), SC : o(n) 
+    */
+    public ListNode oddEvenListUsingTemp(ListNode head) {
+        if (head == null || head.next == null)
+            return head;
+
+        List<Integer> evenList = new ArrayList<>();
+        List<Integer> oddList = new ArrayList<>();
+
+        ListNode temp = head;
+        int index = 1;
+        while (temp != null) {
+            if (index % 2 == 0) {
+                evenList.add(temp.val);
+            } else {
+                oddList.add(temp.val);
+            }
+            temp = temp.next;
+            index++;
+        }
+
+        temp = head;
+        for (int val : oddList) {
+            temp.val = val;
+            temp = temp.next;
+        }
+
+        for (int val : evenList) {
+            temp.val = val;
+            temp = temp.next;
+        }
         return head;
     }
 }
