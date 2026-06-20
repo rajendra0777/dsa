@@ -34,4 +34,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
+## Linked List
+|  |
+| ------- |
+| [0328-odd-even-linked-list](https://github.com/rajendra0777/dsa/tree/master/0328-odd-even-linked-list) |
 <!---LeetCode Topics End-->
