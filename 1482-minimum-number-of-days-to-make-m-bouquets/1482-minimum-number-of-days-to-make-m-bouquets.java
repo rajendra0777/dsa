@@ -1,8 +1,13 @@
+/*
+TC: O(n)+O(logn)+O(n) =  O(NlogN)
+SC: O(1)
+Approach : Binary Search + Greedy
+*/
+
 class Solution {
     public int minDays(int[] bloomDay, int m, int k) {
-
-        if (m * k > bloomDay.length)
-            return -1;
+        // bloom day flower is less than required flower to make bouquet
+        if (m * k > bloomDay.length) return -1;
 
         int low = Integer.MAX_VALUE;
         int high = Integer.MIN_VALUE;
@@ -35,18 +40,18 @@ class Solution {
 
         for (int i = 0; i < bloomDay.length; i++) {
 
-            if (bloomDay[i] <= mid) {
+            if (bloomDay[i] <= mid) { // flower's bloom day must be less than or equal to mid
                 count++;
 
                 if (count == k) {
-                    bouquets++; // one bouque
+                    bouquets++; // one bouquet
                     count = 0; // reset count for next
                 }
             } else {
-                count = 0; 
+                count = 0; // reset count
             }
 
-            if (bouquets >= m)return true;
+         if (bouquets >= m)return true;
         }
         return false;
     }
