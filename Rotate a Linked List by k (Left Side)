@@ -1,0 +1,54 @@
+You are given the head of a singly linked list, you have to left rotate the linked list k times. Return the head of the modified linked list.
+
+input nodes : 10 -> 20 -> 30 -> 40 -> 50
+k = 4
+output: 50 -> 10 -> 20 -> 30 -> 40
+
+TC : O(n) + O(k%n) => O(N)
+SC : O(1)
+Approach: Circular Linked List Shifting
+/*
+class Node {
+    int data;
+    Node next;
+
+    Node(int d){
+        data=d;
+        next=null;
+   }
+}
+*/
+
+class Solution {
+    public Node rotate(Node head, int k) {
+        // Base case
+        if (head == null || head.next == null || k == 0) return head;
+        
+        // Step 1: Find the length of the linked list
+        int length = 1;
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+            length++;
+        }
+        
+        // Step 2: if k >= length
+        k = k % length;
+        if (k == 0) return head; // No rotation needed
+        
+        // Step 3: circular list
+        temp.next = head; 
+        
+        // Step 4: Traverse to the k-th node
+        temp = head;
+        for (int i = 1; i < k; i++) {
+            temp = temp.next;
+        }
+        
+        // Step 5:  
+        Node newHead = temp.next; // store k'th next element
+        temp.next = null;  // make k'th next element null
+        
+        return newHead;
+    }
+}
