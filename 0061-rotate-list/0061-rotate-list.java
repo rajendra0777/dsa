@@ -21,12 +21,13 @@ class Solution {
             length++;
         }
 
-        k = k % length;
-        if (k == 0)return head;
-
         lastNode.next = head; // create temp circular node
+
+        k = k % length;
         int traverseCount = length - k;
+
         ListNode nextNode = head;
+        
         // traverse upto length - k
         for (int i = 1; i < traverseCount; i++) {
             nextNode = nextNode.next;
