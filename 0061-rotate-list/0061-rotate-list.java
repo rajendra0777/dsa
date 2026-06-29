@@ -35,7 +35,7 @@ class Solution {
         // break node after length - k
         ListNode newHead = nextNode.next;
         nextNode.next = null;
-        head = newHead;
+       // head = newHead;
         return newHead;
     }
 
