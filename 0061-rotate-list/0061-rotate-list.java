@@ -7,6 +7,10 @@
  *     ListNode(int val) { this.val = val; }
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
+
+ TC O(N)
+ SC : O(1)
+ Approach: Linekd List Implementation
  */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
