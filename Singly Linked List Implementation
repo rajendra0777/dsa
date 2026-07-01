@@ -1,0 +1,226 @@
+/*******************************************************************************
+ * Singly Linked List Implementation
+ * Operations: Create, Retrieve, Update, Delete
+ ******************************************************************************/
+
+class Node {
+    int data;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    public Node(int data, Node next) {
+        this.data = data;
+        this.next = next;
+    }
+}
+
+class MyLinkedList {
+    int size;
+    Node head;
+
+    public MyLinkedList() {
+        this.size = 0;
+        this.head = null;
+    }
+
+    // Add a node to the beginning of the list
+    void addFirst(int data) {
+        Node newNode = new Node(data);
+        if (size == 0) {
+            head = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        size++;
+    }
+
+    // Add a node to the end of the list
+    void addLast(int data) {
+        Node newNode = new Node(data);
+        if (size == 0) {
+            head = newNode;
+            size++;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        size++;
+    }
+
+    // Insert a node at a specified 0-based index
+    void insertAtIndex(int data, int index) {
+        if (index < 0 || index > size) {
+            System.out.println("Invalid index - Index: " + index + " | Size: " + size);
+            return;
+        }
+
+        if (index == 0) {
+            addFirst(data);
+            return;
+        }
+
+        if (index == size) {
+            addLast(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        Node temp = head;
+        for (int i = 0; i < index - 1; i++) {
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+        size++;
+    }
+
+    // Update the data value at a specified 0-based index
+    void updateAtIndex(int data, int index) {
+        if (index < 0 || index >= size) {
+            System.out.println("Invalid index position");
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        temp.data = data;
+    }
+
+    // Delete the first node
+    void deleteFirst() {
+        if (size == 0) return;
+        head = head.next;
+        size--;
+    }
+
+    // Delete the last node
+    void deleteLast() {
+        if (size == 0) return;
+        if (size == 1) {
+            head = null;
+            size--;
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        size--;
+    }
+
+    // Delete a node at a specified 0-based index
+    void deleteAtIndex(int index) {
+        if (index < 0 || index >= size) {
+            System.out.println("Invalid index position");
+            return;
+        }
+
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+
+        if (index == size - 1) {
+            deleteLast();
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < index - 1; i++) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        size--;
+    }
+
+    // Get the first node value
+    void getFirst() {
+        if (head != null) {
+            System.out.println("First Node: " + head.data);
+        } else {
+            System.out.println("List is empty");
+        }
+    }
+
+    // Get the last node value
+    void getLast() {
+        if (size == 0) {
+            System.out.println("List is empty");
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        System.out.println("Last Node: " + temp.data);
+    }
+
+    // Fetch and display properties of a single node at an index
+    void getAtIndex(int index) {
+        if (index < 0 || index >= size) {
+            System.out.println("Invalid index position");
+            return;
+        }
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        System.out.println("Node at index " + index + ": " + temp.data);
+    }
+
+    // Print the entire linked list structure visually
+    void print() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyLinkedList list = new MyLinkedList();
+        
+        list.addFirst(30);
+        list.addLast(50);
+        list.addFirst(20);
+        list.addFirst(10);
+        list.addLast(100);
+
+        System.out.print("Current List: ");
+        list.print();
+
+        list.getFirst();
+        list.getLast();
+        list.getAtIndex(2);
+
+        System.out.println("\n--- Testing Modifications ---");
+        list.insertAtIndex(40, 3);
+        System.out.print("After Insertion: ");
+        list.print();
+
+        list.updateAtIndex(25, 1);
+        System.out.print("After Update: ");
+        list.print();
+
+        list.deleteAtIndex(4);
+        System.out.print("After Deletion: ");
+        list.print();
+
+        System.out.println("Final Size: " + list.size);
+    }
+}
