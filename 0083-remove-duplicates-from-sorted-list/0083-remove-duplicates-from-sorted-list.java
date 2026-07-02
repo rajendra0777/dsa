@@ -20,8 +20,7 @@ class Solution {
         // afely check the adjacent node
         while (temp != null && temp.next != null) {
             if (temp.val == temp.next.val) { // current & adjacent is equal
-                temp.next = temp.next.next; // link adjacent with prev node
-                // = temp.next; // forward to next node
+                temp.next = temp.next.next; // link adjacent with prev node  & move by one step 
             } else {
                 temp = temp.next;   // forward to next node
             }
