@@ -7,6 +7,8 @@
  *     ListNode(int val) { this.val = val; }
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
+ TC: O(n)
+ SC: O(1)
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
