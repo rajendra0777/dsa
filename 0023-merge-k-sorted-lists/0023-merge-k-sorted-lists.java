@@ -10,50 +10,25 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        
-        if(lists == null || lists.length == 0){
-            return null;
-        }
+        Queue<ListNode> queue = new PriorityQueue<>((l1, l2) -> l1.val - l2.val);
 
-        ListNode mergedHead = null;
-
-
-        for(int i = 0; i < lists.length; i++){
-            mergedHead = mergedList(mergedHead, lists[i]);
-        }
-
-        return mergedHead;
-    }
-
-    ListNode mergedList(ListNode l1, ListNode l2){
-        
-        if(l1 == null)
-            return l2;
-        if(l2 == null)
-            return l1;
-
-        ListNode temp1 = l1;
-        ListNode temp2 = l2;
         ListNode dummyHead = new ListNode(-1);
-        ListNode temp = dummyHead;
+        ListNode dummyTemp = dummyHead;
 
-        while(temp1 != null && temp2 != null){
-            if(temp1.val < temp2.val){
-                temp.next = temp1;
-                temp1 = temp1.next;
-            }else{
-                temp.next = temp2;
-                temp2 = temp2.next;
+        for (int i = 0; i < lists.length; i++) {
+            if (lists[i] != null)
+                queue.add(lists[i]);
+        }
+
+        while (!queue.isEmpty()) {
+            ListNode poppedNode = queue.poll();
+
+            if (poppedNode.next != null) {
+                queue.add(poppedNode.next);
             }
-            temp = temp.next;
-        }
-        
-        if(temp1 != null){
-            temp.next = temp1;
-        }
 
-         if(temp2 != null){
-            temp.next = temp2;
+            dummyTemp.next = poppedNode;
+            dummyTemp = dummyTemp.next;
         }
 
         return dummyHead.next;
