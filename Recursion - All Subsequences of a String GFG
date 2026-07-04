@@ -2,6 +2,7 @@
 TC: O(2^N.N)
 SC:O(2^N.N)
 Approach: Include/Exclude (Pick/Don't Pick)
+Link: https://www.geeksforgeeks.org/problems/power-set4302/1
 */
 
 class Solution {
