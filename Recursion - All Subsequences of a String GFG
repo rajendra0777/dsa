@@ -1,0 +1,30 @@
+/*
+TC: O(2^N.N)
+SC:O(2^N.N)
+Approach: Include/Exclude (Pick/Don't Pick)
+*/
+
+class Solution {
+	public List<String> powerSet(String s) {
+		
+		List<String> list = new ArrayList<>();
+		
+		
+		subsets(s, list, "", 0);
+		
+		Collections.sort(list);
+		
+		return list;
+		
+	}
+	static void subsets(String s, List<String> list, String temp, int index) {
+		if (index == s.length()) {
+			list.add(temp);
+			return;
+		}
+		
+		subsets(s, list, temp + s.charAt(index), index + 1);
+		subsets(s, list, temp, index + 1);
+	}
+}
+
