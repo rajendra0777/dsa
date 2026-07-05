@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/rajendra0777/dsa/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/rajendra0777/dsa/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 ## Sorting
 |  |
@@ -103,4 +105,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rajendra0777/dsa/tree/master/0023-merge-k-sorted-lists) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
