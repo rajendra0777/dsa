@@ -1,3 +1,15 @@
+/**
+    Approach - Recursion + Backtracking
+    
+    T.C. O(N*2^N)
+
+    S.C. O(N) - tempList
+         O(N) - Auxillury Space (stack)
+              - ansList will not consider for SC as it is O/P Space
+     =>  O(N) + O(N) => O(2N)
+         O(N) 
+ */
+
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> ansList = new ArrayList<>();
@@ -11,13 +23,15 @@ class Solution {
             ansList.add(new ArrayList<>(tempList));
             return;
         }
-
-        tempList.add(nums[index]);
-        // Include
-        findSubsets(nums, index + 1, tempList, ansList);
-
+        
         // Exclude
-        tempList.remove(tempList.size() - 1);
         findSubsets(nums, index + 1, tempList, ansList);
+
+        // Include
+        tempList.add(nums[index]);
+        findSubsets(nums, index + 1, tempList, ansList);
+
+        // Backtracking
+        tempList.remove(tempList.size() - 1);
     }
 }
