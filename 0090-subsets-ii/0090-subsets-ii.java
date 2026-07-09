@@ -1,12 +1,14 @@
 /*
-Approach:
-Idea: 
+Approach: Recursion + Backtracking
+    Idea: 
     - Sort the array for unique elements
     - include   (add)
     - backtrack  (go back)
     - check for the duplicate
     - exclude (remove)
 
+TC: O(2^n . n) 
+SC: O(n)
 */
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
@@ -39,7 +41,5 @@ class Solution {
 
         //4. exclude
         findSubset(nums, index + 1, tempList, ansList);
-
-        
     }
 }
