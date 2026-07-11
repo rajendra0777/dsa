@@ -10,10 +10,11 @@
 
  TC: O(N)
  SC: O(1)
- 
+
  */
 class Solution {
-    public ListNode removeElements(ListNode head, int val) {
+
+/*    public ListNode removeElements(ListNode head, int val) {
         ListNode temp = new ListNode(0);
         temp.next = head;
         ListNode prev = temp;
@@ -31,4 +32,22 @@ class Solution {
         return temp.next;
 
     }
+*/
+/* 
+TC: O(N)
+SC: O(N)
+Approach: Recursion
+
+*/
+    public ListNode removeElements(ListNode head, int val) {
+         if (head == null) {
+            return null;
+        }
+
+         // process the remainder of the list and link it   
+         head.next = removeElements(head.next, val);
+
+        //Check: if current node matches target, skip it; otherwise keep it
+         return head.val == val ? head.next : head;
+}
 }
