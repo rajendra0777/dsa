@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/rajendra0777/dsa/tree/master/0020-valid-parentheses) |
 | [2487-remove-nodes-from-linked-list](https://github.com/rajendra0777/dsa/tree/master/2487-remove-nodes-from-linked-list) |
 ## Monotonic Stack
 |  |
@@ -114,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/rajendra0777/dsa/tree/master/0090-subsets-ii) |
+## String
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/rajendra0777/dsa/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
