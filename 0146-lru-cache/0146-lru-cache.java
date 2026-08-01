@@ -1,13 +1,19 @@
+/*
+Approach: Hash Table/Doubly-Linked List
+Key Idea:
+Combine Hash Map for O(1) access and Doubly Linked List for O(1) insertion/deletion to maintain usage order.
+*/
+
 class LRUCache {
 
     Map<Integer, Node> map = new HashMap<>();
+    int capacity;
 
     // initialize head, tail with default
     Node head = new Node(0,0);
     Node tail = new Node(0,0);
     
-    int capacity;
-
+    // doubly linked list
     static class Node{
         private Node prev;
         private Node next;
