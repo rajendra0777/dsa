@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/rajendra0777/dsa/tree/master/0001-two-sum) |
 | [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/rajendra0777/dsa/tree/master/0090-subsets-ii) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
@@ -21,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/rajendra0777/dsa/tree/master/0001-two-sum) |
 | [0141-linked-list-cycle](https://github.com/rajendra0777/dsa/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/rajendra0777/dsa/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/rajendra0777/dsa/tree/master/0146-lru-cache) |
