@@ -1,3 +1,8 @@
+/*
+Approach : 2 Pointer
+TC: O(N)
+SC: O(1)
+*/
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int low = 0;
