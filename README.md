@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rajendra0777/dsa/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/rajendra0777/dsa/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rajendra0777/dsa/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 | [1004-max-consecutive-ones-iii](https://github.com/rajendra0777/dsa/tree/master/1004-max-consecutive-ones-iii) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/rajendra0777/dsa/tree/master/1011-capacity-to-ship-packages-within-d-days) |
@@ -33,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/rajendra0777/dsa/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/rajendra0777/dsa/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/rajendra0777/dsa/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 | [2965-find-missing-and-repeated-values](https://github.com/rajendra0777/dsa/tree/master/2965-find-missing-and-repeated-values) |
 ## Math
@@ -56,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/rajendra0777/dsa/tree/master/0056-merge-intervals) |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 ## Linked List
 |  |
@@ -122,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rajendra0777/dsa/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/rajendra0777/dsa/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -159,4 +163,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/rajendra0777/dsa/tree/master/0056-merge-intervals) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
