@@ -1,4 +1,4 @@
-/*Approach:Brute Force
+/*Approach: 2 Pointer
     1. Buy at lowest price and sell at max
     2. Multiple transaction is allowed
 TC: O(n)
