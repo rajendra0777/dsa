@@ -1,3 +1,14 @@
+/*
+Approach:Bayre moore's voting algorithm
+    1. Two candidates and their respective vote counts
+    2. increasing candidate count when candidate appears
+    3. if count becomes 0 reassign element to the candidate and and start count
+    4. Manually check counts from scratch
+    5. If counts greater thean thresold add nto list and return the list.
+    
+TC: O(N)
+SC: O(1)
+*/
 class Solution {
     public List<Integer> majorityElement(int[] nums) {       
     
