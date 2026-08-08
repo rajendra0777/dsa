@@ -23,7 +23,7 @@ class Solution {
     Time:  O(n + n + n) = O(3n), Space O(2n)
     Space: O(n), Space O(n)
     */
-/*    public int trap(int[] arr) {
+    public int trap(int[] arr) {
         if (arr == null || arr.length == 0)
             return 0;
 
@@ -53,12 +53,13 @@ class Solution {
             trappedWater += Math.min(left[i], right[i]) - arr[i];
         }
         return trappedWater;
-    }*/
+    }
 
-    /* Brute Solution: Prefix and Suffix Arrays
+    /* Brute Solution: Suffix Arrays
     Time:  O(n + n) = O(n),
     Space: O(n)
-    *
+    */
+    
     public int trap(int[] arr) {
         if (arr == null || arr.length == 0)
             return 0;
@@ -85,8 +86,8 @@ class Solution {
         return trappedWater;
     }
 */
-    /* Brute Solution: Optimal Solution: Two-Pointer Technique
-    Time: O(n),
+    /* Optimal Solution: Two-Pointer Technique
+    Time: O(n)
     Space: O(1)
     */
     public int trap(int[] arr) {
