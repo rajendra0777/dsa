@@ -20,21 +20,18 @@ class Solution {
         if (root == null)
             return list;
 
-        Stack<TreeNode> stack = new Stack<>();
-
-        TreeNode temp = root;
-
-
-        while (temp != null || !stack.isEmpty()) {
-
-            while (temp != null) {
-                stack.push(temp);
-                temp = temp.left;
-            }
-            temp = stack.pop();
-            list.add(temp.val);
-            temp = temp.right;
-        }
+        inOrder(root, list);
         return list;
+        
     }
+
+    private void inOrder(TreeNode root, List<Integer> list){
+        if(root == null)return;
+
+        inOrder(root.left, list);
+        list.add(root.val);
+        inOrder(root.right, list);
+
+    }
+
 }
