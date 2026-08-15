@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/rajendra0777/dsa/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/rajendra0777/dsa/tree/master/0042-trapping-rain-water) |
+| [0094-binary-tree-inorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0144-binary-tree-preorder-traversal) |
 | [2487-remove-nodes-from-linked-list](https://github.com/rajendra0777/dsa/tree/master/2487-remove-nodes-from-linked-list) |
 ## Monotonic Stack
@@ -191,13 +192,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0144-binary-tree-preorder-traversal) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0144-binary-tree-preorder-traversal) |
 ## Binary Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
