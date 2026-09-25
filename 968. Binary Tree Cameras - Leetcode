@@ -1,0 +1,106 @@
+/* You are given the root of a binary tree. We install cameras on the tree nodes where each camera at a node can monitor its parent, itself, and its immediate children.
+Return the minimum number of cameras needed to monitor all nodes of the tree.
+Problem : https://leetcode.com/problems/binary-tree-cameras/description/
+
+Example 1:
+Input: root = [0,0,null,0,0]
+Output: 1
+Explanation: One camera is enough to monitor all nodes if placed as shown.
+
+Example 2:
+Input: root = [0,0,null,0,null,0,null,null,0]
+Output: 2
+Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.
+ 
+Constraints:
+The number of nodes in the tree is in the range [1, 1000].
+Node.val == 0
+*/
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+
+ 1 take flag to mark the next nearest node to monitor the area,
+ 2. In order traversal
+ 3. 
+ */
+class Solution {
+    int minCameraCount = Integer.MAX_VALUE;
+
+    public int minCameraCover(TreeNode root) {
+
+        List<TreeNode> listNode = new ArrayList<>();
+        Map<TreeNode, TreeNode> parentMap = new HashMap<>();
+
+        buildParentMap(root, null, listNode, parentMap);
+        recursion(0, listNode, parentMap, new HashSet<TreeNode>());
+        return minCameraCount;
+    }
+
+    private void buildParentMap(TreeNode root, TreeNode parent, List<TreeNode> listNode,
+            Map<TreeNode, TreeNode> parentMap) {
+
+        //base care  
+        if (root == null)
+            return;
+
+        // logic
+        listNode.add(root);
+        parentMap.put(root, parent);
+        buildParentMap(root.left, root, listNode, parentMap);
+        buildParentMap(root.right, root, listNode, parentMap);
+
+    }
+
+    void recursion(int index, List<TreeNode> listNode, Map<TreeNode, TreeNode> parentMap, Set<TreeNode> coveredSet) {
+
+        if (index == listNode.size()) {
+            if (isMonitored(listNode, coveredSet, parentMap)) {
+                minCameraCount = Math.min(minCameraCount, coveredSet.size());
+            }
+            return;
+        }
+
+        recursion(index + 1, listNode, parentMap, coveredSet);
+        coveredSet.add(listNode.get(index));
+        recursion(index + 1, listNode, parentMap, coveredSet);
+        coveredSet.remove(listNode.get(index));
+    }
+
+    private boolean isMonitored(List<TreeNode> listNode, Set<TreeNode> coveredSet, Map<TreeNode, TreeNode> parentMap) {
+
+        for (TreeNode node : listNode) {
+            if (coveredSet.contains(node)) {
+                continue;
+            }
+
+            if (parentMap.get(node) != null && coveredSet.contains(parentMap.get(node))) {
+                continue;
+            }
+
+            if (node.left != null && coveredSet.contains(node.left)) {
+                continue;
+            }
+
+            if (node.right != null && coveredSet.contains(node.right)) {
+                continue;
+            }
+
+            return false;
+        }
+
+        return true;
+    }
+}
