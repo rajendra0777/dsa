@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/rajendra0777/dsa/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
+| [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
 ## Linked List
 |  |
 | ------- |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/rajendra0777/dsa/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/rajendra0777/dsa/tree/master/0142-linked-list-cycle-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rajendra0777/dsa/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
 | [0876-middle-of-the-linked-list](https://github.com/rajendra0777/dsa/tree/master/0876-middle-of-the-linked-list) |
 ## Dynamic Programming
 |  |
@@ -132,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/rajendra0777/dsa/tree/master/0146-lru-cache) |
+| [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
 | [0707-design-linked-list](https://github.com/rajendra0777/dsa/tree/master/0707-design-linked-list) |
 ## Divide and Conquer
 |  |
@@ -143,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rajendra0777/dsa/tree/master/0023-merge-k-sorted-lists) |
+| [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
 ## Merge Sort
 |  |
 | ------- |
@@ -242,4 +246,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/rajendra0777/dsa/tree/master/0700-search-in-a-binary-search-tree) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
