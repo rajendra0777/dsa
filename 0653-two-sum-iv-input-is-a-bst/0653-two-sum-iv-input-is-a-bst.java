@@ -12,44 +12,44 @@
  *         this.right = right;
  *     }
  * }
-Approach : Brute Force using Hashing
-TC: O(N)
-SC : O(N) + O(N) = O(2N) => O(N)
+ Approach: Two Pointer
+ TC: O(N) + O(N) => O(N)
+ SC: O(N)        => O(N)
+
  */
 class Solution {
-    //List<Integer> list = new ArrayList<>();
-
-    Set<Integer> set = new HashSet<>();
-
     public boolean findTarget(TreeNode root, int target) {
+        if(root == null || (root.left== null && root.right == null))return false;
 
-        if (root == null || (root.left == null && root.right == null))
-            return false;
+        List<Integer> list = new ArrayList<>();
+        inOrder(root, list);
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
+        int left = 0;
+        int right = list.size()-1;
 
-        while (!queue.isEmpty()) {
+        while(left<right){
+            int first = list.get(left);
+            int second   = list.get(right);
+            int sum = first + second;
 
-            TreeNode temp = queue.poll();
-
-            int rem = target - temp.val;
-            if (set.contains(rem)) {
+            if(target == sum){
                 return true;
             }
-
-            set.add(temp.val);
-
-            if (temp.left != null) {
-                queue.offer(temp.left);
-            }
-
-            if (temp.right != null) {
-                queue.offer(temp.right);
+            else if(target<sum){
+                right--;
+            }else{
+                left++;
             }
         }
-
         return false;
     }
 
+    private void inOrder(TreeNode root, List<Integer> list){
+
+        if(root == null) return;
+
+        inOrder(root.left, list);
+        list.add(root.val);
+        inOrder(root.right, list);
+    }
 }
