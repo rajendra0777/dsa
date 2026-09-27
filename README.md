@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/rajendra0777/dsa/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [2965-find-missing-and-repeated-values](https://github.com/rajendra0777/dsa/tree/master/2965-find-missing-and-repeated-values) |
 ## Math
 |  |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/rajendra0777/dsa/tree/master/0142-linked-list-cycle-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rajendra0777/dsa/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0876-middle-of-the-linked-list](https://github.com/rajendra0777/dsa/tree/master/0876-middle-of-the-linked-list) |
 ## Dynamic Programming
 |  |
@@ -206,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/rajendra0777/dsa/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/rajendra0777/dsa/tree/master/0543-diameter-of-binary-tree) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0700-search-in-a-binary-search-tree](https://github.com/rajendra0777/dsa/tree/master/0700-search-in-a-binary-search-tree) |
 ## Depth-First Search
 |  |
@@ -217,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/rajendra0777/dsa/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/rajendra0777/dsa/tree/master/0543-diameter-of-binary-tree) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 ## Binary Tree
 |  |
 | ------- |
@@ -229,6 +233,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/rajendra0777/dsa/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/rajendra0777/dsa/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/rajendra0777/dsa/tree/master/0543-diameter-of-binary-tree) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0700-search-in-a-binary-search-tree](https://github.com/rajendra0777/dsa/tree/master/0700-search-in-a-binary-search-tree) |
 ## Breadth-First Search
 |  |
@@ -238,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0102-binary-tree-level-order-traversal](https://github.com/rajendra0777/dsa/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/rajendra0777/dsa/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/rajendra0777/dsa/tree/master/0199-binary-tree-right-side-view) |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 ## DP on Trees
 |  |
 | ------- |
@@ -245,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0653-two-sum-iv-input-is-a-bst](https://github.com/rajendra0777/dsa/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0700-search-in-a-binary-search-tree](https://github.com/rajendra0777/dsa/tree/master/0700-search-in-a-binary-search-tree) |
 ## Data Stream
 |  |
