@@ -1,0 +1,108 @@
+/*
+input : 12, 35, 1, 10, 34, 1
+
+Corner Cases
+- Elements can be duplicate 
+- Only single/ single duplicate element is present in the array. [10]  => -1 / [10,10,10] => -1
+- Element present twise => [10,5,10] => 5
+- Negative element also can have
+
+
+Appraoch: Brute Force
+
+Steps: Sort the Array. (by predefined method or by your own logic)
+       Find the 2nd last element (if not duplicate)
+       if duplicate -> traverse from N to left side of the array, until you will not find any lesser than the highest Number
+
+
+Traversal Appraoch :
+      1. Traverse form 0 to N and find the largest element.
+      2. In the next traversal find the 2nd largest element by comparing largest element.
+
+Stream API
+
+      Convert Array to Stream using -> Arrays.Stream().
+      Reverese it()
+      Skip the first element, find the 2nd element
+
+ */     
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int [] arr = {10,10,10};
+     // int res = findSecondMax(arr);
+      System.out.println(findSecondMax(arr));
+
+    }
+
+    private static int findSecondLargest(int [] arr){
+
+    int size = arr.length;
+    // Base case
+    if(arr == null || size == 1)return -1;
+
+    // Sort the array
+    Arrays.sort(arr); // 1, 1, 10,34,35
+
+
+    int current = arr[size-1];
+    for(int index = size-2; index>=0; index--){
+      if(current>arr[index]){
+        return arr[index];
+        }
+    }
+  return -1;
+  }
+
+  private static int getSecondLargest(int [] arr){
+    
+    int size = arr.length;
+    if(arr == null || size == 1)return -1;
+
+  // store first largetst
+    int firstLarge = Integer.MIN_VALUE;
+
+    for(int index : arr){
+      if(index > firstLarge){
+        firstLarge = index;
+      }
+    }
+
+  // Traverse for the 2nd largest
+    int secondLarge = Integer.MIN_VALUE;
+    for(int num : arr){
+      if(num<=firstLarge){
+       secondLarge = num;
+      }
+    }
+
+    if(firstLarge == secondLarge) return -1;
+
+    return secondLarge;
+  }
+
+  private static int findSecondMax(int [] arr){
+    int size = arr.length;
+
+    if(arr == null || size == 1)return -1;
+
+  // Using stream API
+
+  Optional<Integer> num = Arrays.stream(arr)
+  .distinct() // O(N) => uses hashSet to track the visited element
+  .boxed() // convert each element -> int to Integer
+  .sorted(Comparator.reverseOrder()) // NLogN
+  .skip(1)
+  .findFirst();
+  
+  if(num.isPresent()){
+    return num.get();
+  }
+
+  return num.orElse(-1);
+
+  }
+
+}
