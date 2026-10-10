@@ -1,37 +1,36 @@
-/**
-    Approach - Recursion + Backtracking
-    
-    T.C. O(N*2^N)
-
-    S.C. O(N) - tempList
-         O(N) - Auxillury Space (stack)
-              - ansList will not consider for SC as it is O/P Space
-     =>  O(N) + O(N) => O(2N)
-         O(N) 
- */
+/*
+Approach : Recursion
+TC: O(2^n) => to check all possible subset
+SC: o(n) + o(n) => O(n) = Auxilary Space
+*/
 
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> ansList = new ArrayList<>();
-        List<Integer> tempList = new ArrayList<>();
-        findSubsets(nums, 0, tempList, ansList);
-        return ansList;
+        List<List<Integer>> result = new ArrayList<>();
+
+        List<Integer> temp = new ArrayList<>();
+
+        subset(nums, 0, temp, result);
+        return result;
+
     }
 
-    void findSubsets(int[] nums, int index, List<Integer> tempList, List<List<Integer>> ansList){
-        if(index == nums.length){
-            ansList.add(new ArrayList<>(tempList));
+    void subset(int[] arr, int index, List<Integer> temp, List<List<Integer>> result) {
+
+        // base case
+        if (index == arr.length) {
+            result.add(new ArrayList<>(temp));
             return;
         }
-        
-        // Exclude
-        findSubsets(nums, index + 1, tempList, ansList);
 
-        // Include
-        tempList.add(nums[index]);
-        findSubsets(nums, index + 1, tempList, ansList);
+        // logic
+        // pic
+        temp.add(arr[index]);
+        subset(arr, index + 1, temp, result);
+        // not pick
+        temp.remove(temp.size() - 1);
+        subset(arr, index + 1, temp, result);
 
-        // Backtracking
-        tempList.remove(tempList.size() - 1);
     }
+
 }
