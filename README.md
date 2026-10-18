@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/rajendra0777/dsa/tree/master/0001-two-sum) |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/rajendra0777/dsa/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/rajendra0777/dsa/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/rajendra0777/dsa/tree/master/0056-merge-intervals) |
@@ -34,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/rajendra0777/dsa/tree/master/0001-two-sum) |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 | [0128-longest-consecutive-sequence](https://github.com/rajendra0777/dsa/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/rajendra0777/dsa/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/rajendra0777/dsa/tree/master/0142-linked-list-cycle-ii) |
@@ -53,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 | [2965-find-missing-and-repeated-values](https://github.com/rajendra0777/dsa/tree/master/2965-find-missing-and-repeated-values) |
 ## Bit Manipulation
 |  |
@@ -156,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 | [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/rajendra0777/dsa/tree/master/0090-subsets-ii) |
 ## String
@@ -257,4 +261,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/rajendra0777/dsa/tree/master/0295-find-median-from-data-stream) |
+## Algorithm X
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
+## Dancing Links
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 <!---LeetCode Topics End-->
