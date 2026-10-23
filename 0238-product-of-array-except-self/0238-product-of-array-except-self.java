@@ -5,7 +5,7 @@ SC: O(2n) ~ O(n)
 
 Steps: 
     - Calculate prefix and suffix product
-    - First element = suffix[0]
+    - First element = suffix[1]
     -  Last element = prefix[n-2];
     - Mid element = prefix[i-1]* suffix[i+1];
 */
