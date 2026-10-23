@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rajendra0777/dsa/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/rajendra0777/dsa/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/rajendra0777/dsa/tree/master/0229-majority-element-ii) |
+| [0238-product-of-array-except-self](https://github.com/rajendra0777/dsa/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/rajendra0777/dsa/tree/master/0268-missing-number) |
 | [1004-max-consecutive-ones-iii](https://github.com/rajendra0777/dsa/tree/master/1004-max-consecutive-ones-iii) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/rajendra0777/dsa/tree/master/1011-capacity-to-ship-packages-within-d-days) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0238-product-of-array-except-self](https://github.com/rajendra0777/dsa/tree/master/0238-product-of-array-except-self) |
 | [1004-max-consecutive-ones-iii](https://github.com/rajendra0777/dsa/tree/master/1004-max-consecutive-ones-iii) |
 ## Greedy
 |  |
