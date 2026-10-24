@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/rajendra0777/dsa/tree/master/0001-two-sum) |
 | [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/rajendra0777/dsa/tree/master/0042-trapping-rain-water) |
+| [0051-n-queens](https://github.com/rajendra0777/dsa/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/rajendra0777/dsa/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/rajendra0777/dsa/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/rajendra0777/dsa/tree/master/0057-insert-interval) |
@@ -161,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
+| [0051-n-queens](https://github.com/rajendra0777/dsa/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/rajendra0777/dsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/rajendra0777/dsa/tree/master/0090-subsets-ii) |
 ## String
@@ -267,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/rajendra0777/dsa/tree/master/0037-sudoku-solver) |
+| [0051-n-queens](https://github.com/rajendra0777/dsa/tree/master/0051-n-queens) |
 ## Dancing Links
 |  |
 | ------- |
